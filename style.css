@@ -1,18 +1,111 @@
 /* Poppins font from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 /* common style here */
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1210px;
+  width: 85%;
+  margin: 0 auto 100px auto;
+}
+
+
+.section-description {
+  color: #3a3a3a;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+
+.primary-btn {
+  color: #fff;
+  font-weight: 700;
+  padding: 0.63rem 1.5rem;
+  background: #e02c6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 /* header style here */
+
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+nav h3 {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav > ul {
+  display: flex;
+  gap: 2.2rem;
+}
+
+nav a,
+nav img {
+  color: #3a3a3a;
+  font-weight: 600;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content .banner-text {
+  width: 36.4rem;
+}
+
+.banner-content .banner-text * {
+  margin-bottom: 1rem;
+}
+
+.banner-text h1 {
+  color: #3a3a3a;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner-text button {
+  border-radius: 2.56rem;
+}
+
+.banner-text button > img {
+  font-size: 1rem;
+  position: relative;
+  top: 0.38rem;
+}
+
+.banner-image {
+  background-image: url("./images/circle.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-image > img {
+  /* position: relative; */
+}
+
 /* main style here */
 /* footer style here */
