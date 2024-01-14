@@ -12,6 +12,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 .container {
   max-width: 1210px;
   width: 85%;
@@ -106,6 +107,10 @@ nav img {
   background-repeat: no-repeat;
 }
 
+.banner-image > img{
+  width: 100%;
+}
+
 /* main style here */
 
 /* Company section here */
@@ -114,6 +119,10 @@ nav img {
   align-items: center;
   padding: 2.7rem 0;
   justify-content: space-around;
+}
+
+.company section > img{
+  width: 100%;
 }
 
 hr {
@@ -163,11 +172,11 @@ hr {
   gap: 1.9rem;
   margin-bottom: 3.2rem;
 }
+
 .card-content > .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   width: 20.6rem;
   height: 30rem;
   border-radius: 5px;
@@ -221,6 +230,10 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 6rem;
+}
+
+.feature-image img{
+  width: 100%;
 }
 
 .feature .feature-text {
@@ -280,4 +293,92 @@ footer > .social-link {
   align-items: flex-start;
   gap: 1rem;
   margin-top: 1rem;
+}
+
+
+/* Responsive style here */
+
+@media screen and (max-width:576px) {
+  .card-content {
+  grid-template-columns: 1fr;
+}
+
+.collection > .more-see {
+  left: 6rem;
+}
+
+.feature {
+  flex-direction: column-reverse;
+}
+
+.feature .feature-text {
+  width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature .feature-text > h2 {
+  font-size: 1.5rem;
+ line-height: 1.9rem;
+}
+
+.feature .feature-text > p {
+  width: auto;
+}
+
+.company {
+  flex-wrap: wrap;
+}
+
+.company section > img{
+  width: 70%;
+}
+
+
+.banner-content {
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+
+.banner-content .banner-text {
+  width: 100%;
+  text-align: center;
+}
+
+
+.banner-text > h1 {
+font-size: 1.75rem;
+line-height: 2.4rem;
+}
+
+.banner-text button {
+ margin-left: 4rem;
+}
+
+
+.banner-image > img{
+  width: 100%;
+}
+
+nav {
+  margin: 30px 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+nav h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+nav > ul {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+}
+
 }
